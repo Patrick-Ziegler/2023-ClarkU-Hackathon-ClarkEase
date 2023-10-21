@@ -1,0 +1,49 @@
+/*imports source serif pro and Crimson text fonts from google, Crimson Text is to be used for headers and titles and stuff, source serif is for body and paragraphs*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+/* VARIABLES */
+:root {
+--primary-color: rgb(187, 0, 0);
+--secondary-color: rgba(99, 99, 99, 0.69);;
+--tertiary-color: rgb(250, 255, 184);
+--primary-dark: rgb(95, 0, 0);
+--black: rgb(27, 27, 27);
+--white: rgb(255, 255, 255);
+--text-color: rgb(225, 225, 225);
+--darkgray: rgb(50,50,50);
+--lightgray: rgb(241, 241, 241);
+--gradient-vertical: linear-gradient(rgb(187, 0, 0), rgb(255, 255, 255));
+--gradient-horizontal: linear-gradient(to right,rgb(187, 0, 0), rgb(255, 255, 255));
+--shadow: 2px 4px 4px hsla(0, 0%, 0%, 0.305);
+--body-font: 'Source Serif Pro', Times, serif;
+--heading-font: 'Crimson Text', Times, serif;
+}
+
+  
+  body, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    color:chocolate;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
