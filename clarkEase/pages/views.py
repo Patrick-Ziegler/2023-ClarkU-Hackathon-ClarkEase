@@ -33,6 +33,9 @@ def home(request):
         iframe = branca.element.IFrame(html=popup_content, width=196, height=360)
         popup = folium.Popup(iframe, max_width=500)
         folium.Marker(coordinates, popup=popup).add_to(map)
+        #some of the coordinates that google maps gave me were a little off, but they are mostly where they should be
     
     return render(request, "pages/home.html", {'map':map._repr_html_()})
 
+# I orginially had this really complex javascript thing here, and it would allow users to submits a broken elevator.
+# I quickly learned that unless I had an actual HTTP server, this would not be possible and the command wouldnt work ):
