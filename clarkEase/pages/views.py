@@ -3,6 +3,8 @@ import folium
 import branca
 from pages.models import buildingData
 from django.template.loader import render_to_string
+from django.http import JsonResponse
+
 
 
 # Create your views here.
@@ -28,8 +30,9 @@ def home(request):
         coordinates = (building.latitude, building.longitude)
         popup_content = render_to_string('pages/marker_template.html', {'building': building})
         
-        iframe = branca.element.IFrame(html=popup_content, width=196, height=425)
+        iframe = branca.element.IFrame(html=popup_content, width=196, height=360)
         popup = folium.Popup(iframe, max_width=500)
         folium.Marker(coordinates, popup=popup).add_to(map)
     
     return render(request, "pages/home.html", {'map':map._repr_html_()})
+
