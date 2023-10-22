@@ -7,8 +7,9 @@ class buildingData(models.Model):
     hasElevator = models.BooleanField()
     isElevatorWorking = models.BooleanField()
     hasRamps = models.BooleanField()
-    motorizedEntrances = models.PositiveSmallIntegerField()
-    totalEntrances = models.PositiveSmallIntegerField()
+    numEntrances = models.PositiveSmallIntegerField()
+    numMotorizedEntrances = models.PositiveSmallIntegerField()
+    
     
     def __str__(self):
         return self.buildingName
