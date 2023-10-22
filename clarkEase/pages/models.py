@@ -4,9 +4,9 @@ from django.db import models
 
 class buildingData(models.Model):
     buildingName = models.CharField(max_length=64)
-    hasElevator = models.BooleanField(null=True)
-    isElevatorWorking = models.BooleanField(null=True)
-    hasRamps = models.BooleanField(null=True)
+    hasElevator = models.CharField(max_length=64)
+    isElevatorWorking = models.CharField(max_length=64)
+    hasRamps = models.CharField(max_length=64)
     numEntrances = models.PositiveSmallIntegerField(null=True)
     numMotorizedEntrances = models.PositiveSmallIntegerField(null=True)
     latitude = models.FloatField(null=True)

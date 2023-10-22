@@ -1,2 +1,2 @@
-MACD	True	True	True	3	3	42.252001	-71.82108
-Blackstone Hall	True	True	True	4	1	42.25001	-71.826244
+MACD	Yes	Yes	Yes	3	3	42.252001	-71.82108
+Blackstone Hall	Yes	Yes	Yes	4	1	42.25001	-71.826244
