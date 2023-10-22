@@ -8,8 +8,8 @@ def home(request):
     buildings = buildingData.objects.all()
     
     # Creates a map. Alter coordinates and zoom based on location
-    #mapCenter = [42.252244, -71.823100]
-    map = folium.Map(location=[42.252244, -71.823100], zoom_start=17)
+    #mapCenter = [42.2516486,-71.8234353]
+    map = folium.Map(location=[42.2513208,-71.8233978], zoom_start=17)
     
     # add a marker to the map for each building
     for building in buildings:
