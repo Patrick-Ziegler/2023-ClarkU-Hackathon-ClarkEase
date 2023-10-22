@@ -9,21 +9,24 @@
 
     </head>
     <body>
-
+        {% block content %}
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(187, 0, 0);">
             <div class="container text-center">
-                <a class="navbar-brand mx-auto" href="#" style="font-family: 'Crimson Text'">ClarkEASE - Navigating Accessibility at Clark University</a>
+                <a class="navbar-brand mx-auto" href="#" style="font-family: 'Crimson Text'">ClarkEASE</a>
             </div>
         </nav>
 
-        <div class=container>
+        <!--<div class=container>
             Imagine im a big map right here. like a big box map.
+        </div>-->
+
+        <div class='container-md mh-80'>
+        
+
+        {{ map|safe }}
+
+        {% endblock %}
         </div>
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
